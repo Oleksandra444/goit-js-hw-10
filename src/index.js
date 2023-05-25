@@ -40,7 +40,7 @@ function showCountryList(countries) {
   countries.forEach((country) => {
     const { name, flags } = country;
     const listItem = document.createElement('li');
-    listItem.innerHTML = `<img src="${flags.svg}" alt="${flags.alt} width="40" height = "80" /><span style = "margin-left: 10px">${name.official}</span>`;
+    listItem.innerHTML = `<img src="${flags.svg}" alt="${flags.alt} width="40" height = "40" /><span style = "margin-left: 10px">${name.official}</span>`;
     countryList.appendChild(listItem);
   });
 }
