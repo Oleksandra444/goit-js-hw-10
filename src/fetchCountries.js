@@ -8,7 +8,8 @@ export default function fetchCountries(nameOfCountry) {
     .then(res => {
       if (!res.ok) {
         if (res.status === 404) { 
-          return []; 
+          return [];
+          
         }
         throw new Error('Помилка при отриманні даних');
       }
