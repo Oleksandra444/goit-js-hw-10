@@ -8,6 +8,8 @@ const DEBOUNCE_DELAY = 300;
 const searchBox = document.querySelector('#search-box');
 const countryList = document.querySelector('.country-list');
 const countryInfoContainer = document.querySelector('.country-info');
+
+
 searchBox.addEventListener('input', debounce(handleSearch, DEBOUNCE_DELAY));
 
 function handleSearch() {
